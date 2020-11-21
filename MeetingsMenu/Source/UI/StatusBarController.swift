@@ -29,8 +29,4 @@ class StatusBarController {
 
         statusItem.menu = menu
     }
-    
-    @objc func openURL(_ sender: NSMenuItem) {
-        
-    }
 }

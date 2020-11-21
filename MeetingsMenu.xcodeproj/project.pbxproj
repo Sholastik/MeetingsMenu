@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AE6291D2569742200A1491D /* CanvasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6291C2569742200A1491D /* CanvasError.swift */; };
+		8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292C25697ED000A1491D /* MeetingStatic.swift */; };
+		8AE6293025697F8B00A1491D /* MeetingDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */; };
 		8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E14B256928280080871E /* MeetingsMenuApp.swift */; };
 		8AF6E1502569282A0080871E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6E14F2569282A0080871E /* Assets.xcassets */; };
 		8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E15D25692B290080871E /* StatusBarController.swift */; };
 		8AF6E189256935120080871E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E188256935120080871E /* AppDelegate.swift */; };
+		8AF6E198256942BF0080871E /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E197256942BF0080871E /* Meeting.swift */; };
+		8AF6E19B256943D70080871E /* ZoomMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E19A256943D70080871E /* ZoomMeeting.swift */; };
+		8AF6E19E256946950080871E /* MeetingMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E19D256946950080871E /* MeetingMenuItem.swift */; };
+		8AF6E1A125694AAC0080871E /* DiscordMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E1A025694AAC0080871E /* DiscordMeeting.swift */; };
+		8AF6E1A425695FFD0080871E /* CanvasConferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E1A325695FFD0080871E /* CanvasConferences.swift */; };
+		8AF6E1A7256960200080871E /* CanvasConference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E1A6256960200080871E /* CanvasConference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AE6291C2569742200A1491D /* CanvasError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasError.swift; sourceTree = "<group>"; };
+		8AE6292C25697ED000A1491D /* MeetingStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingStatic.swift; sourceTree = "<group>"; };
+		8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDynamic.swift; sourceTree = "<group>"; };
 		8AF6E148256928280080871E /* MeetingsMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingsMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF6E14B256928280080871E /* MeetingsMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsMenuApp.swift; sourceTree = "<group>"; };
 		8AF6E14F2569282A0080871E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -21,6 +33,12 @@
 		8AF6E1552569282A0080871E /* MeetingsMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeetingsMenu.entitlements; sourceTree = "<group>"; };
 		8AF6E15D25692B290080871E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		8AF6E188256935120080871E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AF6E197256942BF0080871E /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		8AF6E19A256943D70080871E /* ZoomMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomMeeting.swift; sourceTree = "<group>"; };
+		8AF6E19D256946950080871E /* MeetingMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingMenuItem.swift; sourceTree = "<group>"; };
+		8AF6E1A025694AAC0080871E /* DiscordMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscordMeeting.swift; sourceTree = "<group>"; };
+		8AF6E1A325695FFD0080871E /* CanvasConferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasConferences.swift; sourceTree = "<group>"; };
+		8AF6E1A6256960200080871E /* CanvasConference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasConference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +52,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AE62934256980CB00A1491D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6E14B256928280080871E /* MeetingsMenuApp.swift */,
+				8AF6E188256935120080871E /* AppDelegate.swift */,
+				8AF6E15D25692B290080871E /* StatusBarController.swift */,
+				8AF6E19D256946950080871E /* MeetingMenuItem.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8AE62935256980F500A1491D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8AE6291C2569742200A1491D /* CanvasError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		8AE629362569811300A1491D /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6E1A6256960200080871E /* CanvasConference.swift */,
+				8AF6E1A325695FFD0080871E /* CanvasConferences.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		8AE629372569811E00A1491D /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6E197256942BF0080871E /* Meeting.swift */,
+				8AE6292C25697ED000A1491D /* MeetingStatic.swift */,
+				8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */,
+				8AF6E1A025694AAC0080871E /* DiscordMeeting.swift */,
+				8AF6E19A256943D70080871E /* ZoomMeeting.swift */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
 		8AF6E13F256928280080871E = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +121,10 @@
 		8AF6E18F2569405E0080871E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8AF6E188256935120080871E /* AppDelegate.swift */,
-				8AF6E14B256928280080871E /* MeetingsMenuApp.swift */,
-				8AF6E15D25692B290080871E /* StatusBarController.swift */,
+				8AE62934256980CB00A1491D /* UI */,
+				8AE629372569811E00A1491D /* Meeting */,
+				8AE629362569811300A1491D /* Codable */,
+				8AE62935256980F500A1491D /* Error */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -147,9 +206,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */,
+				8AF6E1A7256960200080871E /* CanvasConference.swift in Sources */,
 				8AF6E189256935120080871E /* AppDelegate.swift in Sources */,
+				8AF6E1A125694AAC0080871E /* DiscordMeeting.swift in Sources */,
+				8AF6E19E256946950080871E /* MeetingMenuItem.swift in Sources */,
+				8AE6293025697F8B00A1491D /* MeetingDynamic.swift in Sources */,
+				8AF6E198256942BF0080871E /* Meeting.swift in Sources */,
 				8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */,
 				8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */,
+				8AF6E19B256943D70080871E /* ZoomMeeting.swift in Sources */,
+				8AF6E1A425695FFD0080871E /* CanvasConferences.swift in Sources */,
+				8AE6291D2569742200A1491D /* CanvasError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
