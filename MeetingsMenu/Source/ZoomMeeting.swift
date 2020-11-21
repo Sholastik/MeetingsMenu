@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ZoomMeeting: Meeting {
+class ZoomMeeting: MeetingStatic {
     private let id: String
     private let password: String
     
@@ -17,7 +17,7 @@ class ZoomMeeting: Meeting {
         super.init(title: title)
     }
     
-    override func provideURL() -> URL? {
-        return URL(string: "zoommtg://zoom.us/join?confno=\(id)&pwd=\(password)")
+    override func provideURL() -> URL {
+        return URL(string: "zoommtg://zoom.us/join?confno=\(id)&pwd=\(password)")!
     }
 }

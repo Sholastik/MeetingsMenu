@@ -14,13 +14,11 @@ class Meeting {
         self.title = title
     }
     
-    func provideURL() -> URL? {
-        fatalError("Subclasses need to implement the 'provideURL()' method.")
+    func open() {
+        fatalError("Subclasses need to implement the 'open()' method.")
     }
     
-    func joinMeeting() {
-        if let url = provideURL() {
-            NSWorkspace.shared.open(url)
-        }
+    func joinMeeting(url: URL) {
+        NSWorkspace.shared.open(url)
     }
 }

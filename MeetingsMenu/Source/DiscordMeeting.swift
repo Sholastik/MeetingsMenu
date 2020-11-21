@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DiscordMeeting: Meeting {
+class DiscordMeeting: MeetingStatic {
     private let server: String
     private let channel: String
     
@@ -17,7 +17,7 @@ class DiscordMeeting: Meeting {
         super.init(title: title)
     }
     
-    override func provideURL() -> URL? {
-        return URL(string: "discord://discordapp.com/channels/\(server)/\(channel)")
+    override func provideURL() -> URL {
+        return URL(string: "discord://discordapp.com/channels/\(server)/\(channel)")!
     }
 }
