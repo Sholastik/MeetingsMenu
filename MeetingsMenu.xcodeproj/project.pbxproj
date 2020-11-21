@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E14B256928280080871E /* MeetingsMenuApp.swift */; };
-		8AF6E14E256928280080871E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E14D256928280080871E /* ContentView.swift */; };
 		8AF6E1502569282A0080871E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6E14F2569282A0080871E /* Assets.xcassets */; };
-		8AF6E1532569282A0080871E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6E1522569282A0080871E /* Preview Assets.xcassets */; };
+		8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E15D25692B290080871E /* StatusBarController.swift */; };
+		8AF6E189256935120080871E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E188256935120080871E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AF6E148256928280080871E /* MeetingsMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingsMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF6E14B256928280080871E /* MeetingsMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsMenuApp.swift; sourceTree = "<group>"; };
-		8AF6E14D256928280080871E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8AF6E14F2569282A0080871E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8AF6E1522569282A0080871E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8AF6E1542569282A0080871E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF6E1552569282A0080871E /* MeetingsMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeetingsMenu.entitlements; sourceTree = "<group>"; };
+		8AF6E15D25692B290080871E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		8AF6E188256935120080871E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,22 +53,30 @@
 		8AF6E14A256928280080871E /* MeetingsMenu */ = {
 			isa = PBXGroup;
 			children = (
-				8AF6E14B256928280080871E /* MeetingsMenuApp.swift */,
-				8AF6E14D256928280080871E /* ContentView.swift */,
+				8AF6E195256940C50080871E /* Configs */,
+				8AF6E18F2569405E0080871E /* Source */,
 				8AF6E14F2569282A0080871E /* Assets.xcassets */,
-				8AF6E1542569282A0080871E /* Info.plist */,
-				8AF6E1552569282A0080871E /* MeetingsMenu.entitlements */,
-				8AF6E1512569282A0080871E /* Preview Content */,
 			);
 			path = MeetingsMenu;
 			sourceTree = "<group>";
 		};
-		8AF6E1512569282A0080871E /* Preview Content */ = {
+		8AF6E18F2569405E0080871E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8AF6E1522569282A0080871E /* Preview Assets.xcassets */,
+				8AF6E188256935120080871E /* AppDelegate.swift */,
+				8AF6E14B256928280080871E /* MeetingsMenuApp.swift */,
+				8AF6E15D25692B290080871E /* StatusBarController.swift */,
 			);
-			path = "Preview Content";
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8AF6E195256940C50080871E /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				8AF6E1542569282A0080871E /* Info.plist */,
+				8AF6E1552569282A0080871E /* MeetingsMenu.entitlements */,
+			);
+			name = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +136,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AF6E1532569282A0080871E /* Preview Assets.xcassets in Resources */,
 				8AF6E1502569282A0080871E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AF6E14E256928280080871E /* ContentView.swift in Sources */,
+				8AF6E189256935120080871E /* AppDelegate.swift in Sources */,
+				8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */,
 				8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +279,6 @@
 				CODE_SIGN_ENTITLEMENTS = MeetingsMenu/MeetingsMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"MeetingsMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 5N2LPP9P39;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -295,7 +302,6 @@
 				CODE_SIGN_ENTITLEMENTS = MeetingsMenu/MeetingsMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"MeetingsMenu/Preview Content\"";
 				DEVELOPMENT_TEAM = 5N2LPP9P39;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
