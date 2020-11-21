@@ -5,7 +5,7 @@
 //  Created by Вячеслав Иванов on 21.11.2020.
 //
 
-import SwiftUI
+import Foundation
 
 class Meeting {
     let title: String
