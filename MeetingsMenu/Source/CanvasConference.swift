@@ -9,7 +9,7 @@ import Foundation
 
 struct Conference: Codable {
     let id: Int
-    let endedAt, startedAt: Date?
+    let endedAt, startedAt: String?
 
     enum CodingKeys: String, CodingKey {
         case id
