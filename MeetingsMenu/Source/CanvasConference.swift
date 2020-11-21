@@ -1,5 +1,5 @@
 //
-//  Conference.swift
+//  CanvasConference.swift
 //  MeetingsMenu
 //
 //  Created by Вячеслав Иванов on 21.11.2020.
