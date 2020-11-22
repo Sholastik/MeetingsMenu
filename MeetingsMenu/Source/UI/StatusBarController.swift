@@ -24,6 +24,14 @@ class StatusBarController {
         addMenu()
     }
     
+    @objc private func update(_ sender: NSMenuItem) {
+        addMenu()
+    }
+    
+    @objc private func quit(_ sender: NSMenuItem) {
+        NSApplication.shared.terminate(self)
+    }
+    
     private func addMenu() {
         let menu = NSMenu()
         
@@ -34,6 +42,15 @@ class StatusBarController {
                 menu.addItem(MeetingMenuItem(index: index + 1, meeting: meeting))
             }
         }
+        
+        let updateButton = NSMenuItem(title: "Обновить", action: #selector(update(_:)), keyEquivalent: "u")
+        let quitButton = NSMenuItem(title: "Закрыть", action: #selector(quit(_:)), keyEquivalent: "")
+        
+        updateButton.target = self
+        quitButton.target = self
+        
+        menu.addItem(updateButton)
+        menu.addItem(quitButton)
 
         statusItem.menu = menu
     }
