@@ -21,6 +21,47 @@ class MeetingsDatabase {
             nil,
             Meetings.ComputerScienceModule
         ],
+        [
+            nil,
+            nil,
+            Meetings.Literature,
+            Meetings.Russian,
+            Meetings.PhysicalEducation,
+            Meetings.History,
+            Meetings.Russian
+        ],
+        [
+            Meetings.PhysicalEducation,
+            Meetings.Biology,
+            Meetings.Biology,
+            Meetings.Geometry,
+            Meetings.Geometry,
+            Meetings.Algebra,
+            Meetings.Algebra,
+            Meetings.History
+        ],
+        [
+            Meetings.Geography,
+            Meetings.Literature,
+            Meetings.Algebra,
+            Meetings.German,
+            Meetings.Literature,
+            Meetings.SocialStudies,
+            Meetings.Algebra
+        ],
+        [
+            Meetings.Geometry,
+            Meetings.Geometry,
+            Meetings.English,
+            Meetings.Physics,
+            nil,
+            nil,
+            Meetings.German
+        ],
+        [
+        ],
+        [
+        ],
     ]
     
     static func getMeetings(dayOfWeek day: Int) -> [Meeting?] {
