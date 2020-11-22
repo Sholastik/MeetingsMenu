@@ -13,7 +13,7 @@ class MeetingMenuItem: NSMenuItem {
     init(index: Int, meeting: Meeting) {
         self.meeting = meeting
         
-        super.init(title: "\(index). \(self.meeting.title)", action: #selector(onClick(_:)), keyEquivalent: String(index))
+        super.init(title: "\(index). \(self.meeting.title)", action: #selector(onClick(_:)), keyEquivalent: String(index - 1))
         self.target = self
     }
     
