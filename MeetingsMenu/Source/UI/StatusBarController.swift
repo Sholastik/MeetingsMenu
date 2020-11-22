@@ -27,7 +27,9 @@ class StatusBarController {
     private func addMenu() {
         let menu = NSMenu()
         
-        for (index, value) in MeetingsDatabase.getMeetings(dayOfWeek: 0).enumerated() {
+        let dayOfWeek = Calendar.current.dateComponents([.weekday], from: Date()).weekday!
+        
+        for (index, value) in MeetingsDatabase.getMeetings(dayOfWeek: dayOfWeek).enumerated() {
             if let meeting = value {
                 menu.addItem(MeetingMenuItem(index: index + 1, meeting: meeting))
             }
