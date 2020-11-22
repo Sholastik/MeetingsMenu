@@ -10,6 +10,9 @@
 		8AE6291D2569742200A1491D /* CanvasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6291C2569742200A1491D /* CanvasError.swift */; };
 		8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292C25697ED000A1491D /* MeetingStatic.swift */; };
 		8AE6293025697F8B00A1491D /* MeetingDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */; };
+		8AE629392569819200A1491D /* CanvasMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE629382569819200A1491D /* CanvasMeeting.swift */; };
+		8AF589C9256B0085003D3C4D /* MeetingsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF589C8256B0085003D3C4D /* MeetingsDatabase.swift */; };
+		8AF589CC256B0477003D3C4D /* Meetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF589CB256B0477003D3C4D /* Meetings.swift */; };
 		8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E14B256928280080871E /* MeetingsMenuApp.swift */; };
 		8AF6E1502569282A0080871E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF6E14F2569282A0080871E /* Assets.xcassets */; };
 		8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF6E15D25692B290080871E /* StatusBarController.swift */; };
@@ -26,6 +29,9 @@
 		8AE6291C2569742200A1491D /* CanvasError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasError.swift; sourceTree = "<group>"; };
 		8AE6292C25697ED000A1491D /* MeetingStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingStatic.swift; sourceTree = "<group>"; };
 		8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDynamic.swift; sourceTree = "<group>"; };
+		8AE629382569819200A1491D /* CanvasMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasMeeting.swift; sourceTree = "<group>"; };
+		8AF589C8256B0085003D3C4D /* MeetingsDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsDatabase.swift; sourceTree = "<group>"; };
+		8AF589CB256B0477003D3C4D /* Meetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meetings.swift; sourceTree = "<group>"; };
 		8AF6E148256928280080871E /* MeetingsMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingsMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF6E14B256928280080871E /* MeetingsMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingsMenuApp.swift; sourceTree = "<group>"; };
 		8AF6E14F2569282A0080871E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,9 +93,19 @@
 				8AE6292C25697ED000A1491D /* MeetingStatic.swift */,
 				8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */,
 				8AF6E1A025694AAC0080871E /* DiscordMeeting.swift */,
+				8AE629382569819200A1491D /* CanvasMeeting.swift */,
 				8AF6E19A256943D70080871E /* ZoomMeeting.swift */,
 			);
 			path = Meeting;
+			sourceTree = "<group>";
+		};
+		8AF589C6256AFF6F003D3C4D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8AF589C8256B0085003D3C4D /* MeetingsDatabase.swift */,
+				8AF589CB256B0477003D3C4D /* Meetings.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		8AF6E13F256928280080871E = {
@@ -121,6 +137,7 @@
 		8AF6E18F2569405E0080871E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				8AF589C6256AFF6F003D3C4D /* Data */,
 				8AE62934256980CB00A1491D /* UI */,
 				8AE629372569811E00A1491D /* Meeting */,
 				8AE629362569811300A1491D /* Codable */,
@@ -209,10 +226,13 @@
 				8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */,
 				8AF6E1A7256960200080871E /* CanvasConference.swift in Sources */,
 				8AF6E189256935120080871E /* AppDelegate.swift in Sources */,
+				8AF589CC256B0477003D3C4D /* Meetings.swift in Sources */,
 				8AF6E1A125694AAC0080871E /* DiscordMeeting.swift in Sources */,
 				8AF6E19E256946950080871E /* MeetingMenuItem.swift in Sources */,
 				8AE6293025697F8B00A1491D /* MeetingDynamic.swift in Sources */,
+				8AF589C9256B0085003D3C4D /* MeetingsDatabase.swift in Sources */,
 				8AF6E198256942BF0080871E /* Meeting.swift in Sources */,
+				8AE629392569819200A1491D /* CanvasMeeting.swift in Sources */,
 				8AF6E15E25692B290080871E /* StatusBarController.swift in Sources */,
 				8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */,
 				8AF6E19B256943D70080871E /* ZoomMeeting.swift in Sources */,
