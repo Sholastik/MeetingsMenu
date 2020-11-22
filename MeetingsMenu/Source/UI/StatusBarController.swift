@@ -26,6 +26,12 @@ class StatusBarController {
     
     private func addMenu() {
         let menu = NSMenu()
+        
+        for (index, value) in MeetingsDatabase.getMeetings(dayOfWeek: 0).enumerated() {
+            if let meeting = value {
+                menu.addItem(MeetingMenuItem(index: index + 1, meeting: meeting))
+            }
+        }
 
         statusItem.menu = menu
     }
