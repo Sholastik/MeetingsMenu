@@ -22,6 +22,6 @@ class MeetingMenuItem: NSMenuItem {
     }
     
     @objc private func onClick(_ sender: MeetingMenuItem) {
-        meeting.joinMeeting()
+        meeting.open()
     }
 }
