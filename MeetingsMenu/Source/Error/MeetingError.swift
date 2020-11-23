@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CanvasError: Error {
+enum MeetingError: Error {
     case requestIsUnsuccessful(error: Error)
     case dataIsNull(response: URLResponse?)
     case invalidJson(data: Data)
