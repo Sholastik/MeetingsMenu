@@ -18,7 +18,6 @@ class MeetingsDatabase {
             Meetings.Physics,
             Meetings.SocialStudies,
             Meetings.English,
-            Meetings.ComputerScience,
             nil,
             Meetings.ComputerScienceModule
         ],
