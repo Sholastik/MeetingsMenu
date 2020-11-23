@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8AE6291D2569742200A1491D /* CanvasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6291C2569742200A1491D /* CanvasError.swift */; };
+		8A3C9382256BC69B00E90F07 /* URLMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C9381256BC69B00E90F07 /* URLMeeting.swift */; };
+		8AE6291D2569742200A1491D /* MeetingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6291C2569742200A1491D /* MeetingError.swift */; };
 		8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292C25697ED000A1491D /* MeetingStatic.swift */; };
 		8AE6293025697F8B00A1491D /* MeetingDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */; };
 		8AE629392569819200A1491D /* CanvasMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE629382569819200A1491D /* CanvasMeeting.swift */; };
@@ -26,7 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8AE6291C2569742200A1491D /* CanvasError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasError.swift; sourceTree = "<group>"; };
+		8A3C9381256BC69B00E90F07 /* URLMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLMeeting.swift; sourceTree = "<group>"; };
+		8AE6291C2569742200A1491D /* MeetingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingError.swift; sourceTree = "<group>"; };
 		8AE6292C25697ED000A1491D /* MeetingStatic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingStatic.swift; sourceTree = "<group>"; };
 		8AE6292F25697F8B00A1491D /* MeetingDynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDynamic.swift; sourceTree = "<group>"; };
 		8AE629382569819200A1491D /* CanvasMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasMeeting.swift; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		8AE62935256980F500A1491D /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				8AE6291C2569742200A1491D /* CanvasError.swift */,
+				8AE6291C2569742200A1491D /* MeetingError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -95,6 +97,7 @@
 				8AF6E1A025694AAC0080871E /* DiscordMeeting.swift */,
 				8AE629382569819200A1491D /* CanvasMeeting.swift */,
 				8AF6E19A256943D70080871E /* ZoomMeeting.swift */,
+				8A3C9381256BC69B00E90F07 /* URLMeeting.swift */,
 			);
 			path = Meeting;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE6292D25697ED000A1491D /* MeetingStatic.swift in Sources */,
+				8A3C9382256BC69B00E90F07 /* URLMeeting.swift in Sources */,
 				8AF6E1A7256960200080871E /* CanvasConference.swift in Sources */,
 				8AF6E189256935120080871E /* AppDelegate.swift in Sources */,
 				8AF589CC256B0477003D3C4D /* Meetings.swift in Sources */,
@@ -237,7 +241,7 @@
 				8AF6E14C256928280080871E /* MeetingsMenuApp.swift in Sources */,
 				8AF6E19B256943D70080871E /* ZoomMeeting.swift in Sources */,
 				8AF6E1A425695FFD0080871E /* CanvasConferences.swift in Sources */,
-				8AE6291D2569742200A1491D /* CanvasError.swift in Sources */,
+				8AE6291D2569742200A1491D /* MeetingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
