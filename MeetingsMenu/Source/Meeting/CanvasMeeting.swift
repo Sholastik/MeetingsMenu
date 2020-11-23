@@ -25,39 +25,19 @@ class CanvasMeeting: MeetingDynamic {
         return request
     }
     
-    override func completionHandler(data: Data?, response: URLResponse?, error: Error?) {
+    override func process(data: Data, response: URLResponse) throws {
+        let conferences: Conferences
+        
         do {
-            if let error = error {
-                throw MeetingError.requestIsUnsuccessful(error: error)
-            }
-            
-            if let response = response {
-                if let data = data {
-                    let conferences: Conferences
-                    
-                    do {
-                        conferences = try JSONDecoder().decode(Conferences.self, from: data)
-                    } catch {
-                        throw MeetingError.invalidJson(data: data)
-                    }
-                    
-                    if !conferences.conferences.isEmpty, let conference = conferences.conferences.first, conference.isJoinable {
-                        joinMeeting(url: URL(string: "https://\(domain)/groups/\(group)/conferences/\(conference.id)/join")!)
-                    } else {
-                        throw MeetingError.noConference
-                    }
-                    
-                } else {
-                    throw MeetingError.dataIsNull(response: response)
-                }
-            } else {
-                throw MeetingError.responseIsNull
-            }
-            
-        } catch MeetingError.noConference {
-            showRetryAlert(reason: "Нет конференции")
+            conferences = try JSONDecoder().decode(Conferences.self, from: data)
         } catch {
-            showRetryAlert(reason: error.localizedDescription)
+            throw MeetingError.invalidJson(data: data)
+        }
+        
+        if !conferences.conferences.isEmpty, let conference = conferences.conferences.first, conference.isJoinable {
+            joinMeeting(url: URL(string: "https://\(domain)/groups/\(group)/conferences/\(conference.id)/join")!)
+        } else {
+            throw MeetingError.noConference
         }
     }
 }
