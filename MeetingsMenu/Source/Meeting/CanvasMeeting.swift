@@ -28,7 +28,7 @@ class CanvasMeeting: MeetingDynamic {
     override func completionHandler(data: Data?, response: URLResponse?, error: Error?) {
         do {
             if let error = error {
-                throw CanvasError.requestIsUnsuccessful(error: error)
+                throw MeetingError.requestIsUnsuccessful(error: error)
             }
             
             if let response = response {
@@ -38,23 +38,23 @@ class CanvasMeeting: MeetingDynamic {
                     do {
                         conferences = try JSONDecoder().decode(Conferences.self, from: data)
                     } catch {
-                        throw CanvasError.invalidJson(data: data)
+                        throw MeetingError.invalidJson(data: data)
                     }
                     
                     if !conferences.conferences.isEmpty, let conference = conferences.conferences.first, conference.isJoinable {
                         joinMeeting(url: URL(string: "https://\(domain)/groups/\(group)/conferences/\(conference.id)/join")!)
                     } else {
-                        throw CanvasError.noConference
+                        throw MeetingError.noConference
                     }
                     
                 } else {
-                    throw CanvasError.dataIsNull(response: response)
+                    throw MeetingError.dataIsNull(response: response)
                 }
             } else {
-                throw CanvasError.responseIsNull
+                throw MeetingError.responseIsNull
             }
             
-        } catch CanvasError.noConference {
+        } catch MeetingError.noConference {
             showRetryAlert(reason: "Нет конференции")
         } catch {
             showRetryAlert(reason: error.localizedDescription)
