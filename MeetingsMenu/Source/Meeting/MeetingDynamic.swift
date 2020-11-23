@@ -44,6 +44,6 @@ class MeetingDynamic: Meeting {
     }
     
     func makeRequest(request: URLRequest) {
-        URLSession.shared.dataTask(with: createRequest(), completionHandler: completionHandler).resume()
+        URLSession.shared.dataTask(with: request, completionHandler: completionHandler).resume()
     }
 }
