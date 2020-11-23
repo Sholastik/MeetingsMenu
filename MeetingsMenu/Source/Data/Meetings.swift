@@ -11,7 +11,7 @@ struct Meetings {
     static let Algebra = ZoomMeeting(title: "Алгебра", meetingID: "7266529370", meetingPassword: "k4WJH3")
     static let Biology = ZoomMeeting(title: "Биология", meetingID: "9105234849", meetingPassword: "L2tuUHVkSjVwMGdpWEpsemRjL3JPZz09")
     static let Chemistry = CanvasMeeting(title: "Химия", canvasDomain: "gymnasium.msu.ru", groupID: 25, token: "r84ef682FIMcGygw6pVtLp6pDKmqfty5MIaTyf00xxI5P5v6MWKDYIqhVBrTfTHq")
-//    static let ComputerScience = nil
+    static let ComputerScience = URLMeeting(title: "Информатика", url: "https://teaching.lozhnikov.org/b/and-mmz-kwm-ka5")
     static let ComputerScienceModule = DiscordMeeting(title: "Модуль по информатике", serverID: "580678871066738689", channelID: "690507823234285589")
     static let English = ZoomMeeting(title: "Английский язык", meetingID: "79076606653", meetingPassword: "1304")
     static let Geography = DiscordMeeting(title: "География", serverID: "750356917469053159", channelID: "750356917469053164")

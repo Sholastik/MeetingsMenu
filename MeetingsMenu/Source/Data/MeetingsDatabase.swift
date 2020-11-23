@@ -18,12 +18,13 @@ class MeetingsDatabase {
             Meetings.Physics,
             Meetings.SocialStudies,
             Meetings.English,
+            Meetings.ComputerScience,
             nil,
             Meetings.ComputerScienceModule
         ],
         [
-            nil,
-            nil,
+            Meetings.ComputerScience,
+            Meetings.ComputerScience,
             Meetings.Literature,
             Meetings.Russian,
             Meetings.PhysicalEducation,
@@ -54,8 +55,8 @@ class MeetingsDatabase {
             Meetings.Geometry,
             Meetings.English,
             Meetings.Physics,
-            nil,
-            nil,
+            Meetings.ComputerScience,
+            Meetings.ComputerScience,
             Meetings.German
         ],
         [
