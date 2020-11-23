@@ -55,11 +55,9 @@ class CanvasMeeting: MeetingDynamic {
             }
             
         } catch CanvasError.noConference {
-            // TODO: Add popup
-            print("No conference")
+            showRetryAlert(reason: "Нет конференции")
         } catch {
-            // TODO: Add popup
-            print(error)
+            showRetryAlert(reason: error.localizedDescription)
         }
     }
 }

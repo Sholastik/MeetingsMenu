@@ -21,4 +21,17 @@ class Meeting {
     func joinMeeting(url: URL) {
         NSWorkspace.shared.open(url)
     }
+    
+    func showRetryAlert(reason: String) {
+        DispatchQueue.main.async {
+            let alert = NSAlert()
+            alert.messageText = reason
+            alert.alertStyle = .warning
+            alert.addButton(withTitle: "Ок")
+            alert.addButton(withTitle: "Повторить")
+            if (alert.runModal() == .alertSecondButtonReturn) {
+                self.open()
+            }
+        }
+    }
 }
