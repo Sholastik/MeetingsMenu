@@ -37,9 +37,11 @@ class StatusBarController {
         
         let dayOfWeek = (Calendar.current.dateComponents([.weekday], from: Date()).weekday! - 2 + 7) % 7
         
+        let keyEquivalent = 0
+        
         for (index, value) in MeetingsDatabase.getMeetings(dayOfWeek: dayOfWeek).enumerated() {
             if let meeting = value {
-                menu.addItem(MeetingMenuItem(index: index + 1, meeting: meeting))
+                menu.addItem(MeetingMenuItem(index: index + 1, meeting: meeting, keyEquivalent: String(keyEquivalent)))
             }
         }
         

@@ -10,10 +10,10 @@ import SwiftUI
 class MeetingMenuItem: NSMenuItem {
     let meeting: Meeting
     
-    init(index: Int, meeting: Meeting) {
+    init(index: Int, meeting: Meeting, keyEquivalent: String) {
         self.meeting = meeting
         
-        super.init(title: "\(index). \(self.meeting.title)", action: #selector(onClick(_:)), keyEquivalent: String(index - 1))
+        super.init(title: "\(index). \(self.meeting.title)", action: #selector(onClick(_:)), keyEquivalent: keyEquivalent)
         self.target = self
     }
     
