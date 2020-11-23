@@ -38,7 +38,8 @@ class MeetingsDatabase {
             Meetings.Geometry,
             Meetings.Algebra,
             Meetings.Algebra,
-            Meetings.History
+            Meetings.History,
+            Meetings.SpecialMaths
         ],
         [
             Meetings.Geography,
@@ -61,6 +62,7 @@ class MeetingsDatabase {
         [
         ],
         [
+            Meetings.MathsModule
         ],
     ]
     
