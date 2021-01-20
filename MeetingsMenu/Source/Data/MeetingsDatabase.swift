@@ -10,56 +10,62 @@ import Foundation
 class MeetingsDatabase {
     private static let meetings = [
         [
-            nil,
+            Meetings.Russian,
             Meetings.Chemistry,
-            Meetings.English,
+            nil,
+            Meetings.Geography,
+            Meetings.PhysicalEducation,
             Meetings.Physics,
-            Meetings.Physics,
-            Meetings.Physics,
+            nil,
             Meetings.SocialStudies,
-            Meetings.English,
             nil,
             Meetings.ComputerScienceModule
         ],
         [
             Meetings.ComputerScience,
             Meetings.ComputerScience,
+            nil,
             Meetings.Literature,
-            Meetings.Russian,
-            Meetings.PhysicalEducation,
+            Meetings.Geometry,
+            Meetings.Algebra,
             Meetings.History,
-            Meetings.Russian
+            Meetings.Literature
         ],
         [
+            Meetings.Algebra,
+            Meetings.Algebra,
+            Meetings.Biology,
+            Meetings.Biology,
+            Meetings.Geometry,
             Meetings.PhysicalEducation,
-            Meetings.Biology,
-            Meetings.Biology,
+            nil,
             Meetings.Geometry,
-            Meetings.Geometry,
-            Meetings.Algebra,
-            Meetings.Algebra,
-            Meetings.History,
             Meetings.SpecialMaths
         ],
         [
-            Meetings.Geography,
-            Meetings.Literature,
-            Meetings.Algebra,
             Meetings.German,
+            Meetings.English,
             Meetings.Literature,
-            Meetings.SocialStudies,
-            Meetings.Algebra
+            Meetings.German,
+            Meetings.Russian,
+            Meetings.Geometry,
+            Meetings.History,
+            Meetings.SocialStudies
         ],
         [
-            Meetings.Geometry,
-            Meetings.Geometry,
+            Meetings.Algebra,
             Meetings.English,
             Meetings.Physics,
+            Meetings.Physics,
+            Meetings.Physics,
             Meetings.ComputerScience,
-            Meetings.ComputerScience,
-            Meetings.German
+            Meetings.ComputerScience
         ],
         [
+            nil,
+            nil,
+            nil,
+            Meetings.English
         ],
         [
             Meetings.MathsModule
